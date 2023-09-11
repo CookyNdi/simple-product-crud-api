@@ -18,7 +18,7 @@ const options = {
 };
 
 const app = express();
-const port = process.env.PORT;
+const port = process.env.PORT || 5000;
 
 const specs = swaggerJSDoc(options);
 app.use("/docs", swaggerUi.serve, swaggerUi.setup(specs, { explorer: true }));
