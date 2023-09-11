@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "type": "module",
-  "main": "main.js",
+  "main": "src/main.js",
   "scripts": {
-    "dev": "nodemon main.js",
+    "dev": "nodemon src/main.js",
     "postinstall": "prisma generate"
   },
   "keywords": [],

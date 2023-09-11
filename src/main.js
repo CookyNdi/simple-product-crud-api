@@ -14,7 +14,7 @@ const options = {
       version: "1.0.0",
     },
   },
-  apis: ["./routes/*.js"],
+  apis: ["./src/routes/*.js"],
 };
 
 const app = express();
@@ -38,4 +38,4 @@ app.listen(port, () => {
   console.log(`server running perfectly at port ${port}`);
 });
 
-export default app
+export default app;
