@@ -2,6 +2,10 @@ import { PrismaClient } from "@prisma/client";
 
 const prisma = new PrismaClient();
 
+export const wellcome = (req, res) => {
+  res.status(200).json("hello world");
+};
+
 export const getAllProducts = async (req, res) => {
   try {
     const response = await prisma.products.findMany();

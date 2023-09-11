@@ -1,8 +1,16 @@
 import express from "express";
-import { getAllProducts, getProductById, createProduct, updateProduct, deleteProduct } from "../controllers/Product.js";
+import {
+  getAllProducts,
+  getProductById,
+  createProduct,
+  updateProduct,
+  deleteProduct,
+  wellcome,
+} from "../controllers/Product.js";
 
 const router = express.Router();
 
+router.get("/", wellcome);
 /**
  * @swagger
  * tags:
