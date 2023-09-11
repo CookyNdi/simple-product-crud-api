@@ -37,3 +37,5 @@ app.use(productRoutes);
 app.listen(port, () => {
   console.log(`server running perfectly at port ${port}`);
 });
+
+export default app
